@@ -1,0 +1,139 @@
+body{
+    margin: 0%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    
+}
+
+:root{
+    --DARK-COLOR: #000;
+    --SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
+
+}
+
+input{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+    border-radius: 10px;
+    box-shadow: var(--SHADOWS);
+}
+
+button{
+    margin-top: 10px;
+    background: #5f9341;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    border: 1px solid #5f9341; 
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: var(--SHADOWS);
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    justify-content: space-evenly;
+}
+
+button:hover{
+    background:#40622c;
+    color: white;
+}
+
+#del-btn{
+    background: white;
+    color: #5f9341;
+    box-shadow: var(--SHADOWS);
+}
+
+#del-btn:hover{
+    background:rgb(241, 253, 237);
+    color: #40622c;
+    border: 1px solid #40622c;
+    /* letter-spacing: 0.2em; */
+} 
+
+#ul-el{
+    list-style: none;
+    padding-left: 0%;
+    display: grid;
+    font-size: 1.2em;
+    margin: 5px;
+    color: #000;
+}
+
+
+li{
+    margin-top: 2px;
+    color: #000;
+}
+
+a{
+    color: #40622c;
+}
+
+#toggle{
+    height: 20px;
+    width: 40px;
+    background-color: white;
+    border: 1px solid #40622c;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: var(--SHADOWS);
+    cursor: pointer;
+    
+}
+
+#toggle::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #5f9341;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+
+.dark-theme{
+    background-color: #000;
+    color: aliceblue;
+}
+
+#del-btn.del-dark{
+    background: #40622c;
+    color: aliceblue;
+    box-shadow: 0 6px 5px -5px white;
+    border-color: aliceblue;
+}
+
+#tab-btn.tab-dark{
+    background: aliceblue;
+    color: #40622c;
+    box-shadow: 0 6px 5px -5px white;
+    border-color: #5f9341;
+}
+
+#input-btn.input-dark{
+    background: aliceblue;
+    color: #40622c;
+    box-shadow: 0 6px 5px -5px white;
+    border-color: #5f9341;
+}
+
+a.a-dark{
+    color: aliceblue;
+}
+
